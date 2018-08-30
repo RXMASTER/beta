@@ -103,7 +103,7 @@ function readCookie(name) {
 	  
 	  function player() {
 		  var code = $("#nhap_captcha").val();
-			$.getJSON("http://190.117.113.71/s2.php?id=<?php echo $shot;?>&ticket=<?php echo $tickete;?>&captcha_response="+code, function(data) {
+			$.getJSON("https://openloadrx.herokuapp.com/s2.php?id=<?php echo $shot;?>&ticket=<?php echo $tickete;?>&captcha_response="+code, function(data) {
 			
 				var stt = data.status;
 				if(stt=="200"){
